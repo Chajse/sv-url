@@ -1,0 +1,26 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+	  "allowJs": true,
+	  "checkJs": true,
+	  "esModuleInterop": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "resolveJsonModule": true,
+	  "skipLibCheck": true,
+	  "sourceMap": true,
+	  "strict": true,
+	  "module": "ESNext",  // Change from CommonJS to ESNext
+	  "moduleResolution": "Node",
+	  "target": "ESNext",  // Ensures modern JS features
+	  "outDir": "./dist"
+	},
+	"include": [
+	  "src/**/*",
+	  "server.ts"
+	],
+	"exclude": [
+	  "node_modules",
+	  "dist"
+	]
+  }
+  
